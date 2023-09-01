@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+/* PC表示 */
+
+.cintainer {
+    font-size: 100%;
+    font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", " Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI EmojiSegoe UI";
+}
+
+.header, .aside, .main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+.header-h1 {
+    display: block;
+    width: 120px;
+    background-color: #384152;
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.header-ul {
+    display: flex;
+}
+
+.header-li {
+    margin-left: 30px;
+    list-style: none;
+}
+
+.main-image img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.main-h2 {
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.main-span {
+    border-bottom: 2px solid #212634;
+    padding-bottom: 2px;
+}
+
+.main-h3 {
+    margin-bottom: 15px;
+}
+
+.main-img img {
+    width: 100%;
+    border-radius: 50%;
+    width: 100px;
+}
+
+.main-wrapper {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.aside-h2 {
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    margin: 100px 0 60px 0;
+}
+
+.aside-span {
+    border-bottom: 2px solid #212634;
+    padding-bottom: 2px;
+}
+
+.aside-ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    line-height: 2.5;
+    text-align: center;
+}
+
+.aside-img img {
+    width: 100%;
+}
+
+.footer {
+    text-align: center;
+    border-bottom: 3px solid #000;
+    padding-top: 110px;
+}
+
+/* スマートフォン表示 */
+
+@media(max-width: 600px) {
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-p {
+        font-size: 0.9rem;
+    }
+
+    .main-image img {
+        padding: 0 4%;
+    }
+
+    .main-nav {
+        width: 320px;
+    }
+
+    .main-wrapper {
+        flex-wrap: wrap;
+        align-content: stretch;
+        gap: 5px;
+    }
+
+    .main-h3 {
+        text-align: center;
+    }
+
+    .aside-ul {
+        grid-template-columns: 1fr;
+        font-size: 0.9rem;
+    }
+
+    .aside-img img {
+        width: 310px;
+        height: auto;
+    }
+
+    .footer {
+        border-bottom: 8px solid #000;
+    }
+}
